@@ -12,6 +12,7 @@ public class Customer {
 
     private final BigDecimal balance;
     private List<Transaction> transactions;
+
     public String getName() {
         return name;
     }

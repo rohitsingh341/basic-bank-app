@@ -10,21 +10,21 @@ public class Main {
     public static void main(String[] args) {
         BankingService bank = new BankingService();
 
-        Customer alice = new Customer("Alice", new BigDecimal(1000));
-        Customer bob = new Customer("Bob", new BigDecimal(500));
-        Customer rohit = new Customer("Rohit", new BigDecimal(2500));
+        Customer alice = new Customer("Alice", new BigDecimal("1000"));
+        Customer bob = new Customer("Bob", new BigDecimal("500"));
+        Customer rohit = new Customer("Rohit", new BigDecimal("2500"));
 
         bank.addCustomer(alice);
         bank.addCustomer(bob);
         bank.addCustomer(rohit);
 
-        alice.deposit(new BigDecimal(200));
-        bob.deposit(new BigDecimal(300));
-        rohit.deposit(new BigDecimal(600));
-        alice.withdraw(new BigDecimal(50));
-        bob.withdraw(new BigDecimal(100));
-        rohit.withdraw(new BigDecimal(300));
-        rohit.withdraw(new BigDecimal(100));
+        alice.deposit(new BigDecimal("200"));
+        bob.deposit(new BigDecimal("300"));
+        rohit.deposit(new BigDecimal("600"));
+        alice.withdraw(new BigDecimal("50"));
+        bob.withdraw(new BigDecimal("100"));
+        rohit.withdraw(new BigDecimal("300"));
+        rohit.withdraw(new BigDecimal("100"));
 
         // Get balances after 2 transactions
         System.out.println("Alice's balance after 2 transactions: " +
